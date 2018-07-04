@@ -20,8 +20,6 @@ bool slove(int i,int sum){
 
     if(k[i]==sum)
         return true;
-    else if (k[i]>sum)
-        return false;
     else
         return slove(i+1,sum-k[i])||slove(i+1,sum);
 }
