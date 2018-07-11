@@ -13,6 +13,7 @@
 //note :这个题看起来不像是广度优先搜索，是一个逆向过程，先宽度优先搜索所有状态和初始状态的距离
 
 using namespace std;
+
 int d[4] = {1, -1, 4, -4};
 
 map<string, int> res;
