@@ -1,6 +1,6 @@
 //
 // Created by Administrator on 2018/7/15 0015.
-// 0 1背包问题 2
+// 0 1背包问题 2  没看懂题目
 #include <iostream>
 #include <algorithm>
 
