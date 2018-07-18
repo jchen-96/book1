@@ -2,5 +2,5 @@
 *.out
 
 *.exe
-.vscode/
+# .vscode/
 *.exe
