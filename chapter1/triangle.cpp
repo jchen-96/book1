@@ -3,6 +3,10 @@
 
 
 //三重循环
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
 #define MAX_N 100
 
 int n, a[MAX_N];

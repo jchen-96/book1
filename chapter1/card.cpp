@@ -3,7 +3,13 @@
 //
 // 给定一组数和m,是否存在四个数的和（可重复选取）为m
 
-//#define MAX_N 100;
+#include<iostream>
+#include<algorithm>
+#define MAX_N 100
+
+
+using namespace std;
+
 
 int n, k[MAX_N], m;
 
@@ -76,9 +82,9 @@ bool b_search(int x) {
     while (l < r) {
         int mid = (l + r) / 2;
 
-        if (kk[i] == x) {
+        if (kk[mid] == x) {
             return true;
-        } else if (kk[i] < x) {
+        } else if (kk[mid] < x) {
             l = mid + 1;
         } else {
             r = mid;
@@ -98,7 +104,7 @@ void slove4() {
     sort(kk, kk + n * n);
 
     bool f = false;
-    for (int a = 0; a < n; i++) {
+    for (int a = 0; a < n; a++) {
         for (int b = 0; b < n; b++) {
             if (b_search(m - k[a] - k[b])) {
                 f = true;

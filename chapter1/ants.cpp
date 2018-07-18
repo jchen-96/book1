@@ -1,9 +1,15 @@
 //蚂蚁爬杆子问题
 
+#include<algorithm>
+#include<iostream>
+
 #define MAX_N 1000000
 
 int x[MAX_N];
 int L, n;
+
+
+using namespace std;
 
 void slove() {
     //计算最短时间
@@ -15,7 +21,7 @@ void slove() {
     //计算最长时间
     int maxT = 0;
     for (int i = 0; i < n; i++) {
-        maxT = max(maxT, max(L - x[i]), x[i]);
+        maxT = max(maxT, max(L - x[i], x[i]);
     }
 
     cout << minT << ' ' << maxT << endl;
