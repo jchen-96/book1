@@ -15,17 +15,16 @@ int a[Max_N];
 
 int dp[Max_N];
 
-void slove(){
-    int res=0;
-    for(int i=0;i<n;i++){
-        dp[i]=1;
-        for(int j=0;j<i;j++)
-            if(a[j]<a[i])
-                dp[i]=max(dp[i],dp[j]+1);
-        res=max(res,dp[i]);
+void slove()
+{
+    int res = 0;
+    for (int i = 0; i < n; i++)
+    {
+        dp[i] = 1;
+        for (int j = 0; j < i; j++)
+            if (a[j] < a[i])
+                dp[i] = max(dp[i], dp[j] + 1);
+        res = max(res, dp[i]);
     }
-    cout<<res<<endl;
+    cout << res << endl;
 }
-
-
-
